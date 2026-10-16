@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#071a25" name="theme-color"/>
+<meta content="dark" name="color-scheme"/>
+<meta content="حمّل تطبيق روائع الأذان على هاتف أندرويد بسهولة، مباشرةً من الموقع الرسمي لتحميل التطبيق." name="description"/>
+<meta content="روائع الأذان | تحميل التطبيق" property="og:title"/>
+<meta content="حمّل تطبيق روائع الأذان للأندرويد بضغطة واحدة." property="og:description"/>
+<meta content="website" property="og:type"/>
+<title>روائع الأذان | تحميل التطبيق</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+
+<style>
+    :root { --bg:#071a25; --bg2:#0b2630; --line:rgba(230,202,145,.18); --gold:#f0cc88; --gold2:#d8a95a; --white:#f9faf7; --muted:#afc0c0; --green:#3c997a; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; min-width:300px; background:var(--bg); color:var(--white); font-family:'Cairo',Tahoma,Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; }
+    .page { min-height:100vh; overflow:hidden; position:relative; background:radial-gradient(circle at 13% 14%,#163a40 0%,transparent 32%), radial-gradient(circle at 84% 62%,#13313a 0%,transparent 34%),linear-gradient(145deg,#071822,#0a252d 55%,#061721); }
+    .page::before {content:""; position:absolute; inset:0; opacity:.13; pointer-events:none; background-image:radial-gradient(#e8c583 0.7px,transparent 0.7px); background-size:26px 26px; mask-image:linear-gradient(to bottom,#000,transparent 70%); }
+    .wrap { max-width:1120px; padding-inline:28px; margin-inline:auto; position:relative; }
+    .topbar {display:flex; justify-content:space-between; align-items:center; padding-top:27px; gap:14px;}
+    .brand {display:flex; align-items:center; gap:11px; text-decoration:none; font-size:18px; font-weight:800;}
+    .brand-mark {width:41px; height:41px; border-radius:13px; display:grid;place-items:center; background:linear-gradient(135deg,#28434a,#102e37); border:1px solid var(--line); box-shadow:0 5px 24px #0002;}
+    .brand-mark svg {width:27px;height:27px;}
+    .top-pill {border:1px solid var(--line);color:#e7d4ab; background:#ffffff07;border-radius:99px; padding:6px 15px;font-size:12px; font-weight:700; display:flex;align-items:center;gap:8px;}
+    .status-dot {width:7px;height:7px;background:#5ec9a0;box-shadow:0 0 0 4px #5ec9a01b;border-radius:50%;}
+    main {text-align:center; padding-top:78px; padding-bottom:50px;}
+    .eyebrow {display:inline-flex;align-items:center;gap:12px; font-size:12px;font-weight:700;letter-spacing:.1px; color:var(--gold);}
+    .eyebrow:before,.eyebrow:after{content:"";width:28px;height:1px;background:linear-gradient(90deg,transparent,var(--gold2));}
+    .eyebrow:after{transform:rotate(180deg);}
+    .symbol {position:relative; height:210px; display:grid;place-items:center; margin-top:16px; margin-bottom:14px;}
+    .halo {width:194px;height:194px;border-radius:50%; position:absolute; background:radial-gradient(circle,#27605a60 0%,#18423f35 48%,transparent 72%);box-shadow:0 0 70px #cea56a14;}
+    .orbit {width:176px;height:176px; border:1px solid #eac78324;border-radius:50%;position:absolute;}
+    .orbit:after,.orbit:before {content:"";width:4px;height:4px;border-radius:50%;background:var(--gold2);position:absolute;left:19px;top:27px;}
+    .orbit:before{left:auto;right:17px;top:auto;bottom:28px;}
+    .app-icon {width:142px;height:142px; background:linear-gradient(145deg,#164247,#0a2832 70%); border:1px solid #d7ba7e6b;border-radius:37px;box-shadow:inset 0 1px 0 #ffffff16,0 18px 50px #0006,0 0 32px #d8ac5924;display:grid;place-items:center; position:relative;transform:rotate(-5deg);}
+    .app-icon svg {width:102px;height:102px;transform:rotate(5deg);filter:drop-shadow(0 4px 5px #0003);}
+    h1 {font-size:clamp(42px,6vw,72px);font-weight:900;line-height:1.45;letter-spacing:-1.8px;margin:0;}
+    h1 span {color:var(--gold);}
+    .lead {font-size:17px;line-height:2.05;color:var(--muted);max-width:520px;margin:8px auto 23px;}
+    .tag-row {display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-bottom:26px;}
+    .tag {border:1px solid #ffffff14;border-radius:99px;padding:6px 13px;color:#c8d8d5;background:#ffffff07;font-size:12px;display:inline-flex;align-items:center;gap:7px;}
+    .tag svg {width:15px;height:15px;}
+    .download {display:inline-flex;align-items:center;justify-content:center; gap:14px;min-height:66px;width:min(100%,380px);text-decoration:none; border-radius:18px; background:linear-gradient(115deg,#f5d89f,#e8ba67);color:#122b2b; font-weight:900;font-size:20px; box-shadow:0 15px 35px #0005,0 5px 32px #e9bd6b24;transition:transform .2s,box-shadow .2s;}
+    .download:hover {transform:translateY(-3px);box-shadow:0 20px 44px #0006,0 5px 36px #e9bd6b48;}
+    .download:focus-visible,.faq summary:focus-visible{outline:3px solid #a6e1ca;outline-offset:4px;}
+    .download svg{width:26px;height:26px;}
+    .small-note {color:#94aca9;font-size:12px;line-height:1.9;margin:12px auto 0;}
+    .small-note svg {width:13px;height:13px;vertical-align:-2px;margin-left:4px;}
+    .guide {border:1px solid var(--line); border-radius:27px;background:linear-gradient(140deg,#ffffff09,#ffffff03);box-shadow:0 16px 55px #0002;max-width:850px;margin:58px auto 0;padding:32px; text-align:right;}
+    .section-header {display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:24px;}
+    h2 {font-size:23px;margin:0;font-weight:800;}
+    .section-sub {font-size:12px;color:var(--gold);font-weight:700;}
+    .steps {display:grid;grid-template-columns:repeat(3,1fr);gap:15px;}
+    .step {padding:19px 17px;border-radius:16px;border:1px solid #ffffff0e;background:#061b2370;min-height:142px;}
+    .num {display:grid;place-items:center;width:30px;height:30px;border-radius:9px;border:1px solid #e8c2805b;color:var(--gold);background:#e5bc6512;font-size:15px;font-weight:800;margin-bottom:9px;}
+    .step strong {font-size:14px;display:block;margin-bottom:2px;}
+    .step p {font-size:12px;color:var(--muted);line-height:1.9;margin:0;}
+    .faq {max-width:850px;margin:17px auto 0;text-align:right;}
+    .faq details {border:1px solid #ffffff1a;background:#ffffff06;border-radius:15px;margin-top:9px;padding:0 18px;}
+    .faq summary {padding:15px 0;cursor:pointer;font-weight:700;font-size:13px;}
+    .faq p {font-size:12px;color:var(--muted);line-height:2;margin:0 0 16px;}
+    footer {text-align:center; padding:22px 28px 32px; color:#799792; font-size:12px;border-top:1px solid #ffffff0e;position:relative;}
+    .device-hint{display:none;max-width:550px;margin:17px auto 0;padding:12px 16px;border:1px solid #c79b5359;background:#c79b530b;border-radius:12px;color:#e6cca0;font-size:12px;line-height:1.9;}
+    .device-hint.show {display:block;}
+    @media (max-width:650px) { .wrap {padding-inline:18px;} .topbar{padding-top:19px;} .brand{font-size:15px;}.brand-mark{width:36px;height:36px;border-radius:11px;} .top-pill{font-size:10px;padding:5px 10px;} main {padding-top:45px;} .symbol{height:177px;margin-top:10px;margin-bottom:7px;} .halo{width:167px;height:167px;}.orbit{width:152px;height:152px;}.app-icon{width:125px;height:125px;border-radius:34px;}.app-icon svg{width:94px;height:94px;} h1{font-size:43px;letter-spacing:-1px;} .lead{font-size:14px;max-width:340px;line-height:2.1;margin:6px auto 18px;} .download{font-size:18px;min-height:64px;} .tag-row{margin-bottom:23px;} .guide{padding:22px 18px;margin-top:45px;border-radius:22px;} h2{font-size:19px;}.section-header{align-items:flex-start;flex-direction:column;gap:3px;margin-bottom:17px;} .steps{grid-template-columns:1fr;gap:8px;}.step{min-height:0;padding:13px;display:grid;grid-template-columns:36px 1fr;column-gap:10px;}.num{grid-row:span 2;margin:2px 0 0;}.step strong{font-size:13px;}.step p{font-size:12px;} }
+    @media (prefers-reduced-motion:reduce) {html{scroll-behavior:auto;} .download{transition:none;} .download:hover{transform:none;}}
+  
+    /* Pure CSS/text iconography: no SVG or runtime icon renderer. */
+    .brand-glyph{font-family:Georgia,serif;color:var(--gold);font-size:32px;line-height:1;display:block;transform:rotate(-15deg)}
+    .custom-logo{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;transform:rotate(5deg)}
+    .custom-moon{font-family:Georgia,serif;font-size:65px;color:var(--gold);height:67px;line-height:1;filter:drop-shadow(0 5px 12px #0003);transform:rotate(-14deg)}
+    .custom-text{font-weight:900;color:var(--gold);font-size:25px;line-height:1.4;white-space:nowrap}
+    .tag-icon{color:var(--gold);font-size:18px;line-height:1;font-weight:900}
+    .download-icon{font-size:34px;font-family:Arial,sans-serif;line-height:1;font-weight:900}
+    @media(max-width:650px){.custom-moon{font-size:58px;height:58px}.custom-text{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="wrap">
+<header class="topbar">
+<a aria-label="روائع الأذان - بداية الصفحة" class="brand" href="#">
+<span aria-hidden="true" class="brand-mark"><span class="brand-glyph">☾</span></span>
+<span>روائع الأذان</span>
+</a>
+<span class="top-pill"><span class="status-dot"></span> تطبيق أندرويد</span>
+</header>
+<main>
+<div class="eyebrow">بين يديك</div>
+<div aria-hidden="true" class="symbol">
+<div class="halo"></div><div class="orbit"></div>
+<div class="app-icon"><div class="custom-logo"><span class="custom-moon">☾</span><span class="custom-text">الأذان</span></div></div>
+</div>
+<h1>روائع <span>الأذان</span></h1>
+<p class="lead">حمّل تطبيق روائع الأذان على هاتفك بكل سهولة، واستمتع بتجربة بسيطة تبدأ بضغطة واحدة.</p>
+<div aria-label="معلومات التحميل" class="tag-row">
+<span class="tag"><span class="tag-icon">◉</span> للأندرويد</span>
+<span class="tag"><span class="tag-icon">↓</span> ملف APK</span>
+<span class="tag"><span class="tag-icon">✓</span> تحميل مباشر</span>
+</div>
+<!-- IMPORTANT: Publish a non-prerelease GitHub Release and attach a file named app.apk. -->
+<a aria-label="تحميل تطبيق روائع الأذان لأندرويد" class="download" href="https://github.com/Husseinabozina/azan-view-download/releases/latest/download/app.apk" id="downloadButton">
+<span aria-hidden="true" class="download-icon">↓</span>
+<span>تحميل التطبيق الآن</span>
+</a>
+<p class="small-note">لا تحتاج إلى حساب GitHub أو Google Drive لتحميل التطبيق.</p>
+<div class="device-hint" id="deviceHint" role="status">هذه النسخة مخصصة لهواتف أندرويد فقط، ولن يتم تثبيتها على جهاز iPhone أو iPad.</div>
+<section aria-labelledby="guideTitle" class="guide" id="guide">
+<div class="section-header"><h2 id="guideTitle">طريقة التثبيت</h2><span class="section-sub">3 خطوات بسيطة</span></div>
+<div class="steps">
+<div class="step"><span class="num">١</span><strong>حمّل التطبيق</strong><p>اضغط الزر الموجود بالأعلى وانتظر انتهاء تنزيل الملف.</p></div>
+<div class="step"><span class="num">٢</span><strong>افتح الملف</strong><p>افتح ملف APK من التنزيلات على هاتفك.</p></div>
+<div class="step"><span class="num">٣</span><strong>اتبع تعليمات الهاتف</strong><p>قد يطلب أندرويد السماح بالتثبيت من هذا المصدر. راجع الطلب ووافق إن كنت تثق بالملف.</p></div>
+</div>
+</section>
+<section aria-label="الأسئلة الشائعة" class="faq">
+<details><summary>ضغطت تحميل ولم أجد الملف، ماذا أفعل؟</summary><p>افتح تطبيق «الملفات» على هاتفك ثم ادخل إلى «التنزيلات» (Downloads). غالبًا ستجد ملف app.apk هناك.</p></details>
+<details><summary>ظهر لي تنبيه أمني أثناء التثبيت، هل هذا طبيعي؟</summary><p>قد يُظهر أندرويد تنبيهًا عند تثبيت تطبيق من خارج متجر Google Play. لا تتجاوز أي تحذير إلا إذا كنت متأكدًا من مصدر التطبيق وتثق فيه. لا يستطيع الموقع تثبيت التطبيق دون موافقتك.</p></details>
+<details><summary>هل يعمل التطبيق على iPhone؟</summary><p>ملف APK مخصص لأجهزة أندرويد ولا يعمل على iPhone أو iPad.</p></details>
+</section>
+</main>
+</div>
+<footer>روائع الأذان <span aria-hidden="true">✦</span> صفحة تحميل تطبيق أندرويد</footer>
+</div>
+<script>
+    (function(){
+      const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      if(isAppleMobile) document.getElementById('deviceHint').classList.add('show');
+    })();
+  </script>
+</body>
+</html>
